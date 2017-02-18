@@ -6,13 +6,13 @@
 //  Copyright © 2017 Ameya. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "RKHomeViewController.h"
 
-@interface ViewController ()
+@interface RKHomeViewController ()
 
 @end
 
-@implementation ViewController
+@implementation RKHomeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

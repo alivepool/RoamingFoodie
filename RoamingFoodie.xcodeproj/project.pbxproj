@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		6254C7C41E58A2B800A59389 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6254C7C31E58A2B800A59389 /* main.m */; };
 		6254C7C71E58A2B800A59389 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6254C7C61E58A2B800A59389 /* AppDelegate.m */; };
-		6254C7CA1E58A2B800A59389 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6254C7C91E58A2B800A59389 /* ViewController.m */; };
+		6254C7CA1E58A2B800A59389 /* RKHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6254C7C91E58A2B800A59389 /* RKHomeViewController.m */; };
 		6254C7CD1E58A2B800A59389 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6254C7CB1E58A2B800A59389 /* Main.storyboard */; };
 		6254C7CF1E58A2B800A59389 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6254C7CE1E58A2B800A59389 /* Assets.xcassets */; };
 		6254C7D21E58A2B800A59389 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6254C7D01E58A2B800A59389 /* LaunchScreen.storyboard */; };
@@ -20,8 +20,8 @@
 		6254C7C31E58A2B800A59389 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6254C7C51E58A2B800A59389 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6254C7C61E58A2B800A59389 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6254C7C81E58A2B800A59389 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6254C7C91E58A2B800A59389 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6254C7C81E58A2B800A59389 /* RKHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKHomeViewController.h; sourceTree = "<group>"; };
+		6254C7C91E58A2B800A59389 /* RKHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKHomeViewController.m; sourceTree = "<group>"; };
 		6254C7CC1E58A2B800A59389 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6254C7CE1E58A2B800A59389 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6254C7D11E58A2B800A59389 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -60,8 +60,8 @@
 			children = (
 				6254C7C51E58A2B800A59389 /* AppDelegate.h */,
 				6254C7C61E58A2B800A59389 /* AppDelegate.m */,
-				6254C7C81E58A2B800A59389 /* ViewController.h */,
-				6254C7C91E58A2B800A59389 /* ViewController.m */,
+				6254C7C81E58A2B800A59389 /* RKHomeViewController.h */,
+				6254C7C91E58A2B800A59389 /* RKHomeViewController.m */,
 				6254C7CB1E58A2B800A59389 /* Main.storyboard */,
 				6254C7CE1E58A2B800A59389 /* Assets.xcassets */,
 				6254C7D01E58A2B800A59389 /* LaunchScreen.storyboard */,
@@ -150,7 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6254C7CA1E58A2B800A59389 /* ViewController.m in Sources */,
+				6254C7CA1E58A2B800A59389 /* RKHomeViewController.m in Sources */,
 				6254C7C71E58A2B800A59389 /* AppDelegate.m in Sources */,
 				6254C7C41E58A2B800A59389 /* main.m in Sources */,
 			);
@@ -309,6 +309,7 @@
 				6254C7D81E58A2B800A59389 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
