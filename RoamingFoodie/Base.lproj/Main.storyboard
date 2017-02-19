@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Map-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="RFTruckMapViewController" sceneMemberID="viewController">
@@ -33,7 +33,7 @@
                             <constraint firstItem="7pn-e4-spI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Te9-pY-R0C"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="N7V-Wc-5Ab"/>
+                    <tabBarItem key="tabBarItem" title="Map" id="N7V-Wc-5Ab"/>
                     <connections>
                         <outlet property="mapView" destination="7pn-e4-spI" id="elG-U3-79y"/>
                     </connections>
@@ -41,6 +41,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="972" y="37.331334332833585"/>
+        </scene>
+        <!--List-->
+        <scene sceneID="Ug5-xM-jEy">
+            <objects>
+                <viewController id="8Aw-AL-hfB" customClass="RFTruckListViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="deP-nb-aLs"/>
+                        <viewControllerLayoutGuide type="bottom" id="us3-db-eBQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fA1-RU-uWX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JNQ-RR-SwP">
+                                <rect key="frame" x="67" y="277" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="us3-db-eBQ" firstAttribute="top" secondItem="JNQ-RR-SwP" secondAttribute="bottom" id="0gf-Wm-If5"/>
+                            <constraint firstItem="JNQ-RR-SwP" firstAttribute="top" secondItem="deP-nb-aLs" secondAttribute="bottom" id="2rH-TY-8lm"/>
+                            <constraint firstAttribute="trailing" secondItem="JNQ-RR-SwP" secondAttribute="trailing" id="DnD-j0-raA"/>
+                            <constraint firstItem="JNQ-RR-SwP" firstAttribute="leading" secondItem="fA1-RU-uWX" secondAttribute="leading" id="f2Q-Fa-uvr"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="List" id="b91-uG-O6K"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="truckTable" destination="JNQ-RR-SwP" id="70P-pk-4jJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0XL-U6-M9L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="756" y="814"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="SEY-It-vya">
@@ -53,6 +88,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Aff-Wl-TPE"/>
+                        <segue destination="8Aw-AL-hfB" kind="relationship" relationship="viewControllers" id="qCG-SM-eca"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6W5-le-Fv0" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -19,6 +19,7 @@
 		6254C7E41E596AC600A59389 /* RFTruckDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6254C7E31E596AC600A59389 /* RFTruckDataModel.m */; };
 		6254C7E71E596B1900A59389 /* RFTruckDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6254C7E61E596B1900A59389 /* RFTruckDataManager.m */; };
 		6254C7EA1E597D5000A59389 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6254C7E91E597D5000A59389 /* CoreLocation.framework */; };
+		6254C7ED1E59D48E00A59389 /* RFTruckListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6254C7EC1E59D48E00A59389 /* RFTruckListViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -54,6 +55,8 @@
 		6254C7E61E596B1900A59389 /* RFTruckDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RFTruckDataManager.m; path = TruckData/RFTruckDataManager.m; sourceTree = "<group>"; };
 		6254C7E81E597AEA00A59389 /* RFConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFConstants.h; sourceTree = "<group>"; };
 		6254C7E91E597D5000A59389 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		6254C7EB1E59D48E00A59389 /* RFTruckListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFTruckListViewController.h; sourceTree = "<group>"; };
+		6254C7EC1E59D48E00A59389 /* RFTruckListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFTruckListViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +97,8 @@
 				6254C7C61E58A2B800A59389 /* AppDelegate.m */,
 				6254C7C81E58A2B800A59389 /* RFTruckMapViewController.h */,
 				6254C7C91E58A2B800A59389 /* RFTruckMapViewController.m */,
+				6254C7EB1E59D48E00A59389 /* RFTruckListViewController.h */,
+				6254C7EC1E59D48E00A59389 /* RFTruckListViewController.m */,
 				6254C7DC1E5968FC00A59389 /* TruckData */,
 				6254C7CB1E58A2B800A59389 /* Main.storyboard */,
 				6254C7CE1E58A2B800A59389 /* Assets.xcassets */,
@@ -210,6 +215,7 @@
 				6254C7E71E596B1900A59389 /* RFTruckDataManager.m in Sources */,
 				6254C7C71E58A2B800A59389 /* AppDelegate.m in Sources */,
 				6254C7E41E596AC600A59389 /* RFTruckDataModel.m in Sources */,
+				6254C7ED1E59D48E00A59389 /* RFTruckListViewController.m in Sources */,
 				6254C7C41E58A2B800A59389 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

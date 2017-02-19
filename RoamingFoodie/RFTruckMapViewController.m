@@ -24,12 +24,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     if (!self.truckDataManager) {
-        self.truckDataManager = [[RFTruckDataManager alloc] init];
+        self.truckDataManager = [RFTruckDataManager sharedManager];
     }
     
     CLLocationCoordinate2D coord = {.latitude =  37.773972, .longitude =  -122.431297};
-    MKCoordinateSpan span = {.latitudeDelta =  1, .longitudeDelta =  1};
-    MKCoordinateRegion region = {coord, span};
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(coord, 6000, 6000);
     [self.mapView setRegion:region];
     
     __weak __typeof__(self) weakSelf = self;
@@ -37,13 +36,17 @@
     NSMutableDictionary *dict = [[NSMutableDictionary alloc] initWithObjects:@[APP_TOKEN] forKeys:@[@"$$app_token"]];
     [self.truckDataManager fetchTruckDataWithURL:SF_TRUCK_DATA_URL headers:dict success:^(id responseObject) {
         __typeof__(self) strongSelf = weakSelf;
-        strongSelf.truckDataArray = [NSMutableArray arrayWithArray:responseObject];
-        
+        strongSelf.truckDataArray = responseObject;
+        for (RFTruckDataModel* truckDataModel in strongSelf.truckDataArray) {
+            MKPointAnnotation *point = [[MKPointAnnotation alloc] init];
+            point.coordinate = truckDataModel.truckLocation;
+            point.title = truckDataModel.truckOwner;
+            [strongSelf.mapView addAnnotation:point];
+        }
     } failure:^(NSError *error) {
         
     }];
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
