@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RKHomeViewController : UIViewController
+@interface RFTruckMapViewController : UIViewController
 
 
 @end
