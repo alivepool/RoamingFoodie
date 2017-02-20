@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6252DA651E5B4F6F00FBA0B0 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6252DA631E5B4F1900FBA0B0 /* AFNetworking.framework */; };
+		6252DA661E5B4F6F00FBA0B0 /* AFNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6252DA631E5B4F1900FBA0B0 /* AFNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6254C7C41E58A2B800A59389 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6254C7C31E58A2B800A59389 /* main.m */; };
 		6254C7C71E58A2B800A59389 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6254C7C61E58A2B800A59389 /* AppDelegate.m */; };
 		6254C7CA1E58A2B800A59389 /* RFTruckMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6254C7C91E58A2B800A59389 /* RFTruckMapViewController.m */; };
@@ -14,8 +16,6 @@
 		6254C7CF1E58A2B800A59389 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6254C7CE1E58A2B800A59389 /* Assets.xcassets */; };
 		6254C7D21E58A2B800A59389 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6254C7D01E58A2B800A59389 /* LaunchScreen.storyboard */; };
 		6254C7DB1E59615700A59389 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6254C7DA1E59615700A59389 /* MapKit.framework */; };
-		6254C7DF1E596A7100A59389 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6254C7DD1E596A6B00A59389 /* AFNetworking.framework */; settings = {ATTRIBUTES = (Required, ); }; };
-		6254C7E01E596A7100A59389 /* AFNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6254C7DD1E596A6B00A59389 /* AFNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6254C7E41E596AC600A59389 /* RFTruckDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6254C7E31E596AC600A59389 /* RFTruckDataModel.m */; };
 		6254C7E71E596B1900A59389 /* RFTruckDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6254C7E61E596B1900A59389 /* RFTruckDataManager.m */; };
 		6254C7EA1E597D5000A59389 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6254C7E91E597D5000A59389 /* CoreLocation.framework */; };
@@ -31,17 +31,16 @@
 		6254C8111E5B239300A59389 /* hdar_close.png in Resources */ = {isa = PBXBuildFile; fileRef = 6254C8071E5B239300A59389 /* hdar_close.png */; };
 		6254C8121E5B239300A59389 /* hdar_close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6254C8081E5B239300A59389 /* hdar_close@2x.png */; };
 		6254C8131E5B239300A59389 /* hdar_close@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6254C8091E5B239300A59389 /* hdar_close@3x.png */; };
-		6254C8771E5B4A0600A59389 /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6254C8761E5B4A0600A59389 /* libAFNetworking.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		6254C7E11E596A7100A59389 /* Embed Frameworks */ = {
+		6252DA671E5B4F6F00FBA0B0 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				6254C7E01E596A7100A59389 /* AFNetworking.framework in Embed Frameworks */,
+				6252DA661E5B4F6F00FBA0B0 /* AFNetworking.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -49,6 +48,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6252DA631E5B4F1900FBA0B0 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = FrameworksExternal/AFNetworking.framework; sourceTree = "<group>"; };
 		6254C7BF1E58A2B800A59389 /* RoamingFoodie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoamingFoodie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6254C7C31E58A2B800A59389 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6254C7C51E58A2B800A59389 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -60,7 +60,6 @@
 		6254C7D11E58A2B800A59389 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6254C7D31E58A2B800A59389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6254C7DA1E59615700A59389 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		6254C7DD1E596A6B00A59389 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = /Users/kh2075/Projects/Mine/Comp/RoamingFoodie/RoamingFoodie/FrameworksExternal/AFNetworking.framework; sourceTree = "<absolute>"; };
 		6254C7E21E596AC600A59389 /* RFTruckDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RFTruckDataModel.h; path = TruckData/RFTruckDataModel.h; sourceTree = "<group>"; };
 		6254C7E31E596AC600A59389 /* RFTruckDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RFTruckDataModel.m; path = TruckData/RFTruckDataModel.m; sourceTree = "<group>"; };
 		6254C7E51E596B1900A59389 /* RFTruckDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RFTruckDataManager.h; path = TruckData/RFTruckDataManager.h; sourceTree = "<group>"; };
@@ -81,7 +80,6 @@
 		6254C8071E5B239300A59389 /* hdar_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hdar_close.png; sourceTree = "<group>"; };
 		6254C8081E5B239300A59389 /* hdar_close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hdar_close@2x.png"; sourceTree = "<group>"; };
 		6254C8091E5B239300A59389 /* hdar_close@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hdar_close@3x.png"; sourceTree = "<group>"; };
-		6254C8761E5B4A0600A59389 /* libAFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFNetworking.a; path = FrameworksExternal/libAFNetworking.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,9 +88,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6254C7EA1E597D5000A59389 /* CoreLocation.framework in Frameworks */,
+				6252DA651E5B4F6F00FBA0B0 /* AFNetworking.framework in Frameworks */,
 				6254C7DB1E59615700A59389 /* MapKit.framework in Frameworks */,
-				6254C8771E5B4A0600A59389 /* libAFNetworking.a in Frameworks */,
-				6254C7DF1E596A7100A59389 /* AFNetworking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,7 +146,7 @@
 		6254C7D91E59615700A59389 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6254C8761E5B4A0600A59389 /* libAFNetworking.a */,
+				6252DA631E5B4F1900FBA0B0 /* AFNetworking.framework */,
 				6254C7E91E597D5000A59389 /* CoreLocation.framework */,
 				6254C7DA1E59615700A59389 /* MapKit.framework */,
 			);
@@ -228,7 +225,7 @@
 				6254C7BB1E58A2B800A59389 /* Sources */,
 				6254C7BC1E58A2B800A59389 /* Frameworks */,
 				6254C7BD1E58A2B800A59389 /* Resources */,
-				6254C7E11E596A7100A59389 /* Embed Frameworks */,
+				6252DA671E5B4F6F00FBA0B0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

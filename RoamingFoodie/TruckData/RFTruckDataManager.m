@@ -7,8 +7,8 @@
 //
 
 #import "RFTruckDataManager.h"
-#import <AFNetworking/AFNetworking.h>
 #import "RFTruckDataModel.h"
+#import <AFNetworking/AFNetworking.h>
 
 @interface RFTruckDataManager()
 @property(nonatomic, strong)NSMutableArray *truckDataArray;
