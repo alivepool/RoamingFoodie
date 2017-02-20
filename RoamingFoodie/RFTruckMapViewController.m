@@ -13,6 +13,7 @@
 #import <MapKit/MapKit.h>
 #import <CoreLocation/CoreLocation.h>
 #import "RFLocationManager.h"
+#import "RoamingFoodie-Swift.h"
 
 @interface RFTruckMapViewController ()<RFLocationManagerDelegate>
 @property(nonatomic, strong)RFTruckDataManager* truckDataManager;
