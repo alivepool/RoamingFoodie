@@ -12,8 +12,9 @@
 #import "RFTruckDataModel.h"
 #import <MapKit/MapKit.h>
 #import <CoreLocation/CoreLocation.h>
+#import "RFLocationManager.h"
 
-@interface RFTruckListViewController ()<UITableViewDelegate, UITableViewDataSource>
+@interface RFTruckListViewController ()<UITableViewDelegate, UITableViewDataSource, RFLocationManagerDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *truckTable;
 @property(nonatomic, strong)RFTruckDataManager* truckDataManager;
 @property(nonatomic, strong)NSMutableArray<RFTruckDataModel*>* truckDataArray;
@@ -23,6 +24,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [RFLocationManager sharedManager].delegate = self;
     if (!self.truckDataManager) {
         self.truckDataManager = [RFTruckDataManager sharedManager];
     }
@@ -60,6 +62,11 @@
     }
     cell.textLabel.text = [[self.truckDataArray objectAtIndex:indexPath.row] truckOwner];
     return cell;
+}
+
+#pragma mark -- RFLocationManagerDelegate method
+-(void)currentLocation:(CLLocation *)location{
+    
 }
 
 @end

@@ -9,7 +9,13 @@
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
 
+@protocol RFLocationManagerDelegate <NSObject>
+
+-(void)currentLocation:(CLLocation*)location;
+
+@end
+
 @interface RFLocationManager : NSObject
-@property (strong, nonatomic) CLLocation* currentLocation;
+@property (weak, nonatomic)id delegate;
 +(_Nonnull instancetype) sharedManager;
 @end

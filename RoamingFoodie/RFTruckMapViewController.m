@@ -14,7 +14,7 @@
 #import <CoreLocation/CoreLocation.h>
 #import "RFLocationManager.h"
 
-@interface RFTruckMapViewController ()
+@interface RFTruckMapViewController ()<RFLocationManagerDelegate>
 @property(nonatomic, strong)RFTruckDataManager* truckDataManager;
 @property(nonatomic, strong)NSMutableArray* truckDataArray;
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
@@ -24,7 +24,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [RFLocationManager sharedManager];
+    [RFLocationManager sharedManager].delegate = self;
     if (!self.truckDataManager) {
         self.truckDataManager = [RFTruckDataManager sharedManager];
     }
@@ -60,5 +60,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark -- RFLocationManagerDelegate method
+-(void)currentLocation:(CLLocation *)location{
+    
+}
 
 @end

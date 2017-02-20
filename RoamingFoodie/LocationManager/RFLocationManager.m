@@ -9,7 +9,9 @@
 #import "RFLocationManager.h"
 
 @interface RFLocationManager ()<CLLocationManagerDelegate>
+@property (strong, nonatomic) CLLocation* currentLocation;
 @property (strong, nonatomic) CLLocationManager *locationManager;
+@property (strong, nonatomic) NSPointerArray *locationObserverArray;
 @end
 
 @implementation RFLocationManager
@@ -26,6 +28,7 @@
 - (id)init {
     self = [super init];
     if(self != nil) {
+        self.locationObserverArray = [NSPointerArray weakObjectsPointerArray];
         self.locationManager = [[CLLocationManager alloc] init];
         self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
         self.locationManager.distanceFilter = 1000; // meters
@@ -34,6 +37,10 @@
         [self startUpdatingLocation];
     }
     return self;
+}
+
+-(void)setDelegate:(id)delegate{
+    [self.locationObserverArray addPointer:(__bridge void * _Nullable)(delegate)];
 }
 
 - (void)startUpdatingLocation{
@@ -50,10 +57,11 @@
      didUpdateLocations:(NSArray*)locations
 {
     CLLocation *location = [locations lastObject];
-    NSLog(@"Latitude %+.6f, Longitude %+.6f\n",
-          location.coordinate.latitude,
-          location.coordinate.longitude);
     self.currentLocation = location;
+    [self.locationObserverArray compact];
+    for (NSInteger pos = 0; pos<self.locationObserverArray.count; pos++) {
+        [((id<RFLocationManagerDelegate>)[self.locationObserverArray pointerAtIndex:pos]) currentLocation:self.currentLocation];
+    }
 }
 
 @end
