@@ -14,7 +14,7 @@
 		6254C7CF1E58A2B800A59389 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6254C7CE1E58A2B800A59389 /* Assets.xcassets */; };
 		6254C7D21E58A2B800A59389 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6254C7D01E58A2B800A59389 /* LaunchScreen.storyboard */; };
 		6254C7DB1E59615700A59389 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6254C7DA1E59615700A59389 /* MapKit.framework */; };
-		6254C7DF1E596A7100A59389 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6254C7DD1E596A6B00A59389 /* AFNetworking.framework */; };
+		6254C7DF1E596A7100A59389 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6254C7DD1E596A6B00A59389 /* AFNetworking.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		6254C7E01E596A7100A59389 /* AFNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6254C7DD1E596A6B00A59389 /* AFNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6254C7E41E596AC600A59389 /* RFTruckDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6254C7E31E596AC600A59389 /* RFTruckDataModel.m */; };
 		6254C7E71E596B1900A59389 /* RFTruckDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6254C7E61E596B1900A59389 /* RFTruckDataManager.m */; };
@@ -31,6 +31,7 @@
 		6254C8111E5B239300A59389 /* hdar_close.png in Resources */ = {isa = PBXBuildFile; fileRef = 6254C8071E5B239300A59389 /* hdar_close.png */; };
 		6254C8121E5B239300A59389 /* hdar_close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6254C8081E5B239300A59389 /* hdar_close@2x.png */; };
 		6254C8131E5B239300A59389 /* hdar_close@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6254C8091E5B239300A59389 /* hdar_close@3x.png */; };
+		6254C8771E5B4A0600A59389 /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6254C8761E5B4A0600A59389 /* libAFNetworking.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -59,7 +60,7 @@
 		6254C7D11E58A2B800A59389 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6254C7D31E58A2B800A59389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6254C7DA1E59615700A59389 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		6254C7DD1E596A6B00A59389 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = FrameworksExternal/AFNetworking.framework; sourceTree = "<group>"; };
+		6254C7DD1E596A6B00A59389 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = /Users/kh2075/Projects/Mine/Comp/RoamingFoodie/RoamingFoodie/FrameworksExternal/AFNetworking.framework; sourceTree = "<absolute>"; };
 		6254C7E21E596AC600A59389 /* RFTruckDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RFTruckDataModel.h; path = TruckData/RFTruckDataModel.h; sourceTree = "<group>"; };
 		6254C7E31E596AC600A59389 /* RFTruckDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RFTruckDataModel.m; path = TruckData/RFTruckDataModel.m; sourceTree = "<group>"; };
 		6254C7E51E596B1900A59389 /* RFTruckDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RFTruckDataManager.h; path = TruckData/RFTruckDataManager.h; sourceTree = "<group>"; };
@@ -80,6 +81,7 @@
 		6254C8071E5B239300A59389 /* hdar_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hdar_close.png; sourceTree = "<group>"; };
 		6254C8081E5B239300A59389 /* hdar_close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hdar_close@2x.png"; sourceTree = "<group>"; };
 		6254C8091E5B239300A59389 /* hdar_close@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hdar_close@3x.png"; sourceTree = "<group>"; };
+		6254C8761E5B4A0600A59389 /* libAFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFNetworking.a; path = FrameworksExternal/libAFNetworking.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 			files = (
 				6254C7EA1E597D5000A59389 /* CoreLocation.framework in Frameworks */,
 				6254C7DB1E59615700A59389 /* MapKit.framework in Frameworks */,
+				6254C8771E5B4A0600A59389 /* libAFNetworking.a in Frameworks */,
 				6254C7DF1E596A7100A59389 /* AFNetworking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,8 +149,8 @@
 		6254C7D91E59615700A59389 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6254C8761E5B4A0600A59389 /* libAFNetworking.a */,
 				6254C7E91E597D5000A59389 /* CoreLocation.framework */,
-				6254C7DD1E596A6B00A59389 /* AFNetworking.framework */,
 				6254C7DA1E59615700A59389 /* MapKit.framework */,
 			);
 			name = Frameworks;
@@ -424,6 +427,7 @@
 		6254C7D71E58A2B800A59389 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PM7352S8QE;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -432,6 +436,10 @@
 				);
 				INFOPLIST_FILE = RoamingFoodie/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FrameworksExternal",
+				);
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ameya.RoamingFoodie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -439,12 +447,14 @@
 				PROVISIONING_PROFILE_SPECIFIER = AmeyaDevProfile;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
+				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
 			};
 			name = Debug;
 		};
 		6254C7D81E58A2B800A59389 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PM7352S8QE;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -453,12 +463,17 @@
 				);
 				INFOPLIST_FILE = RoamingFoodie/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FrameworksExternal",
+				);
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ameya.RoamingFoodie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "0f54579e-0b09-42d3-808c-dee736975e81";
 				PROVISIONING_PROFILE_SPECIFIER = AmeyaDevProfile;
 				SWIFT_VERSION = 3.0;
+				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
 			};
 			name = Release;
 		};
