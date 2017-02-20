@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface RFTruckDataManager : NSObject
-+(instancetype)sharedManager;
--(void)fetchTruckDataWithURL:(NSString* _Nonnull)urlString headers:(NSMutableDictionary* _Nullable)headers success:(void(^ _Nonnull)(id responseObject))successHandler failure:(void(^ _Nonnull)(NSError *error))failureHandler;
++(_Nonnull instancetype)sharedManager;
+-(NSMutableArray* _Nullable)truckData;
+-(void)fetchTruckDataWithURL:(NSString* _Nonnull)urlString headers:(NSMutableDictionary* _Nullable)headers success:(void(^ _Nonnull)(id _Nonnull responseObject))successHandler failure:(void(^ _Nonnull)(NSError * _Nonnull error))failureHandler;
 @end

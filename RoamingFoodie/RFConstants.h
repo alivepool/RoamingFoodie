@@ -17,3 +17,4 @@
 
 //Get the app token from webservice and save in keychain rather than hardcoding;
 #define APP_TOKEN @"WsWk9y0ItLoNhlmXhONNS2ASX"
+#define APP_TOKEN_KEY @"$$app_token"
