@@ -45,7 +45,7 @@
         <!--AR-->
         <scene sceneID="pEz-iM-Ihx">
             <objects>
-                <viewController id="Qct-Ns-UDY" customClass="ARViewController" customModule="RoamingFoodie" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Qct-Ns-UDY" customClass="RFARViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pud-xz-OhZ"/>
                         <viewControllerLayoutGuide type="bottom" id="s1W-ao-UrD"/>
@@ -53,14 +53,32 @@
                     <view key="view" contentMode="scaleToFill" id="vw9-t6-szC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hmH-B3-LMJ">
+                                <rect key="frame" x="116" y="289" width="143" height="89"/>
+                                <color key="backgroundColor" red="0.92759475754401921" green="1" blue="0.70299660798767138" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="143" id="9Zv-ip-wR9"/>
+                                    <constraint firstAttribute="height" constant="89" id="TSb-H4-GO8"/>
+                                </constraints>
+                                <state key="normal" title="Launch AR View"/>
+                                <connections>
+                                    <action selector="launchARView:" destination="Qct-Ns-UDY" eventType="touchUpInside" id="xti-p3-44D"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hmH-B3-LMJ" firstAttribute="centerX" secondItem="vw9-t6-szC" secondAttribute="centerX" id="dTv-rY-PVy"/>
+                            <constraint firstItem="hmH-B3-LMJ" firstAttribute="centerY" secondItem="vw9-t6-szC" secondAttribute="centerY" id="uvX-Cg-CKo"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="AR" id="lPm-3g-t3A"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R98-Eb-xXZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="878" y="555"/>
+            <point key="canvasLocation" x="877.60000000000002" y="554.57271364317842"/>
         </scene>
         <!--List-->
         <scene sceneID="Ug5-xM-jEy">
@@ -107,6 +125,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="58w-SB-hhf" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="axu-S4-UHA">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
