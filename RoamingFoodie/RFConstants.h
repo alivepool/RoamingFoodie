@@ -18,3 +18,10 @@
 //Get the app token from webservice and save in keychain rather than hardcoding;
 #define APP_TOKEN @"WsWk9y0ItLoNhlmXhONNS2ASX"
 #define APP_TOKEN_KEY @"$$app_token"
+
+//SF location
+#define SF_LAT 37.773972
+#define SF_LON -122.431297
+
+#define SF_REGION_RADIUS 6000
+#define SF_FOCUSED_REGION_RADIUS 1000

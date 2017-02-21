@@ -30,12 +30,9 @@
         self.truckDataManager = [RFTruckDataManager sharedManager];
     }
     
-    CLLocationCoordinate2D coord = {.latitude =  37.773972, .longitude =  -122.431297};
-    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(coord, 6000, 6000);
-    [self.mapView setRegion:region];
-    
     self.truckDataArray = [self.truckDataManager truckData];
     
+    [self setMapRegionWithLat:SF_LAT long:SF_LON latMeter:SF_REGION_RADIUS lonMeter:SF_REGION_RADIUS];
     
     if (!self.truckDataArray) {
         __weak __typeof__(self) weakSelf = self;
@@ -61,9 +58,15 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)setMapRegionWithLat:(double)lat long:(double)lon latMeter:(double)latM lonMeter:(double)lonM{
+    CLLocationCoordinate2D coord = {.latitude =  lat, .longitude =  lon};
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(coord, latM, lonM);
+    [self.mapView setRegion:region];
+}
+
 #pragma mark -- RFLocationManagerDelegate method
 -(void)currentLocation:(CLLocation *)location{
-    
+    [self setMapRegionWithLat:location.coordinate.latitude long:location.coordinate.longitude latMeter:SF_FOCUSED_REGION_RADIUS lonMeter:SF_FOCUSED_REGION_RADIUS];
 }
 
 @end
