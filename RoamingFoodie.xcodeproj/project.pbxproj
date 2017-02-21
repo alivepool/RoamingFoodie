@@ -10,6 +10,8 @@
 		6252DA651E5B4F6F00FBA0B0 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6252DA631E5B4F1900FBA0B0 /* AFNetworking.framework */; };
 		6252DA661E5B4F6F00FBA0B0 /* AFNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6252DA631E5B4F1900FBA0B0 /* AFNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6252DA6D1E5B523400FBA0B0 /* RFARViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6252DA6C1E5B523400FBA0B0 /* RFARViewController.m */; };
+		6252DA781E5C409000FBA0B0 /* FoodTruck.png in Resources */ = {isa = PBXBuildFile; fileRef = 6252DA761E5C409000FBA0B0 /* FoodTruck.png */; };
+		6252DA791E5C409000FBA0B0 /* FoodCart.png in Resources */ = {isa = PBXBuildFile; fileRef = 6252DA771E5C409000FBA0B0 /* FoodCart.png */; };
 		6254C7C41E58A2B800A59389 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6254C7C31E58A2B800A59389 /* main.m */; };
 		6254C7C71E58A2B800A59389 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6254C7C61E58A2B800A59389 /* AppDelegate.m */; };
 		6254C7CA1E58A2B800A59389 /* RFTruckMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6254C7C91E58A2B800A59389 /* RFTruckMapViewController.m */; };
@@ -52,6 +54,8 @@
 		6252DA631E5B4F1900FBA0B0 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = FrameworksExternal/AFNetworking.framework; sourceTree = "<group>"; };
 		6252DA6B1E5B523400FBA0B0 /* RFARViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFARViewController.h; sourceTree = "<group>"; };
 		6252DA6C1E5B523400FBA0B0 /* RFARViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFARViewController.m; sourceTree = "<group>"; };
+		6252DA761E5C409000FBA0B0 /* FoodTruck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FoodTruck.png; path = Resources/FoodTruck.png; sourceTree = "<group>"; };
+		6252DA771E5C409000FBA0B0 /* FoodCart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FoodCart.png; path = Resources/FoodCart.png; sourceTree = "<group>"; };
 		6254C7BF1E58A2B800A59389 /* RoamingFoodie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoamingFoodie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6254C7C31E58A2B800A59389 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6254C7C51E58A2B800A59389 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -99,6 +103,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6252DA751E5C407700FBA0B0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6252DA761E5C409000FBA0B0 /* FoodTruck.png */,
+				6252DA771E5C409000FBA0B0 /* FoodCart.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		6254C7B61E58A2B800A59389 = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +149,7 @@
 				6254C7D31E58A2B800A59389 /* Info.plist */,
 				6254C7E81E597AEA00A59389 /* RFConstants.h */,
 				6254C7C21E58A2B800A59389 /* Supporting Files */,
+				6252DA751E5C407700FBA0B0 /* Resources */,
 			);
 			path = RoamingFoodie;
 			sourceTree = "<group>";
@@ -282,9 +296,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6254C7D21E58A2B800A59389 /* LaunchScreen.storyboard in Resources */,
+				6252DA781E5C409000FBA0B0 /* FoodTruck.png in Resources */,
 				6254C8111E5B239300A59389 /* hdar_close.png in Resources */,
 				6254C8131E5B239300A59389 /* hdar_close@3x.png in Resources */,
 				6254C7CF1E58A2B800A59389 /* Assets.xcassets in Resources */,
+				6252DA791E5C409000FBA0B0 /* FoodCart.png in Resources */,
 				6254C7CD1E58A2B800A59389 /* Main.storyboard in Resources */,
 				6254C8121E5B239300A59389 /* hdar_close@2x.png in Resources */,
 				6254C8101E5B239300A59389 /* DebugMapViewController.xib in Resources */,

@@ -15,9 +15,10 @@
 #import "RFLocationManager.h"
 #import "RoamingFoodie-Swift.h"
 
-@interface RFTruckMapViewController ()<RFLocationManagerDelegate>
+@interface RFTruckMapViewController ()<RFLocationManagerDelegate, MKMapViewDelegate>
 @property(nonatomic, strong)RFTruckDataManager* truckDataManager;
 @property(nonatomic, strong)NSMutableArray* truckDataArray;
+@property(nonatomic, strong)NSMutableArray* annotationArray;
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @end
 
@@ -41,11 +42,15 @@
         [self.truckDataManager fetchTruckDataWithURL:SF_TRUCK_DATA_URL headers:dict success:^(id responseObject) {
             __typeof__(self) strongSelf = weakSelf;
             strongSelf.truckDataArray = responseObject;
+            [strongSelf.mapView removeAnnotations:strongSelf.mapView.annotations];
+            [strongSelf.annotationArray removeAllObjects];
             for (RFTruckDataModel* truckDataModel in strongSelf.truckDataArray) {
                 MKPointAnnotation *point = [[MKPointAnnotation alloc] init];
                 point.coordinate = truckDataModel.truckLocation;
                 point.title = truckDataModel.truckOwner;
+                point.subtitle = [truckDataModel.foodItems componentsJoinedByString:@","];
                 [strongSelf.mapView addAnnotation:point];
+                [strongSelf.annotationArray addObject:point];
             }
         } failure:^(NSError *error) {
             

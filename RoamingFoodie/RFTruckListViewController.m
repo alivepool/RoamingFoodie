@@ -60,7 +60,20 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"Cell"];
     }
-    cell.textLabel.text = [[self.truckDataArray objectAtIndex:indexPath.row] truckOwner];
+    
+    RFTruckDataModel *truckData = [self.truckDataArray objectAtIndex:indexPath.row];
+    
+    cell.textLabel.text = truckData.truckOwner;
+    cell.detailTextLabel.text = [truckData.foodItems componentsJoinedByString:@","];
+    NSString *truckImage = nil;
+    if ([truckData.truckType isEqualToString:@"Truck"]) {
+        truckImage = @"FoodTruck.png";
+    }
+    else if ([truckData.truckType isEqualToString:@"Push Cart"]){
+        truckImage = @"FoodCart.png";
+    }
+    
+    cell.imageView.image = [UIImage imageNamed:truckImage];
     return cell;
 }
 

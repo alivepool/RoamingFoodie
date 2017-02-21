@@ -16,5 +16,5 @@
 @property(nonatomic, strong)NSString* truckOwner;
 @property(nonatomic, strong)NSString* truckType;
 @property(nonatomic, strong)NSString* truckScheduleURL;
-@property(nonatomic, strong)NSArray* foodItems;
+@property(nonatomic, strong)NSMutableArray* foodItems;
 @end

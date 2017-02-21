@@ -54,6 +54,12 @@
                 truckDataModel.truckOwner = [dataDict objectForKey:@"applicant"];
                 truckDataModel.truckType = [dataDict objectForKey:@"facilitytype"];
                 truckDataModel.truckScheduleURL = [dataDict objectForKey:@"schedule"];
+                NSArray *foodItemsArray = [[dataDict objectForKey:@"fooditems"] componentsSeparatedByString:@":"];
+                truckDataModel.foodItems = [[NSMutableArray alloc] init];
+                for (NSString *foodItem in foodItemsArray) {
+                    [truckDataModel.foodItems addObject:[foodItem stringByTrimmingCharactersInSet:
+                                                         [NSCharacterSet whitespaceCharacterSet]]];
+                }
                 [truckDataArray addObject:truckDataModel];
             }
             strongSelf.truckDataArray = truckDataArray;
